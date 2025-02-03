@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+ <title></title>
+<meta name="description" content="" />
+
+  <!-- <meta property="og:site_name" content="" /> -->
+  <!-- <meta property="og:image" content="./img/ogp.jpg" /> -->
+  <link rel="shortcut icon" href="./img/favicon.jpg" type="image/svg+xml">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/luminous-basic.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+
+<body>
+
+<!-- ローディング -->
+<div id="loading">
+  <div class="spinner">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+  </div>
+</div>
+
+  <div class="wrap">
+    <header class="header">
+      <h1 class="header__logo">
+        <a href="/">
+          <object type="image/svg+xml" data="./img/logo.svg" width="320" height="50" alt="Hiromi's Portfolio"></object>
+        </a>
+      </h1>
+      <div class="js-header__nav">
+        <!-- <nav class="header__nav">
+          <ul class="header__nav-inner">
+            <li class="header__nav-item">
+              <a href="">home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="">about</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="">contact</a>
+            </li>
+          </ul>
+        </nav> -->
+      </div>
+      <!-- <div class="hamburger__bg">
+        <div class="hamburger__wrap">
+          <button class="hamburger js-hamburger">
+            <span class="hamburger__item"></span>
+            <span class="hamburger__item"></span>
+            <span class="hamburger__item"></span>
+          </button>
+        </div>
+      </div> -->
+    </header>
+  <main>
+
+    <div class="profile">
+      <div class="inner-l">
+        <div class="profile__inner">
+          <!-- <figure class="profile__img">
+            <img src="./img/pf-icon.jpg" alt="">
+          </figure> -->
+          <div class="profile__desc">
+            <!-- <h2 class="profile__ttl">Profile</h2> -->
+            
+            <p class="profile__name">
+             </p>
+             <p class="profile__txt">
+              ご覧いただきありがとうございます。<br>
+              こちらはイラストレーターH.Aのポートフォリオサイトです。<br>
+              ご連絡は下記よりお願いいたします。
+            </p>
+            <p class="profile__sns">
+              <a href="mailto:lumivalo74@gmail.com" class="sns__icon-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 9L12 12.5L17 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M2 17V7C2 5.89543 2.89543 5 4 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z" stroke="currentColor" stroke-width="1.5"></path>
+              </svg>
+            </a>
+              <!-- <a href="https://www.instagram.com/hiaki_i/" target="_blank" rel="noopener" class="sns__icon-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z" stroke="currentColor" stroke-width="1.5"></path>
+                <path d="M17.5 6.51L17.51 6.49889" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="contents contents--top">
+
+      <div class="inner-l">
+
+        <div class="tab-wrap fadein">
+          <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-01">すべてのイラスト</label>
+          <div class="tab-content">
+            <ul class="item-wrap js-grid">
+
+              <li class="item js-item">
+                <a href="./img/27.jpg" class="luminous">
+                  <img src="./img/27.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/25.jpg" class="luminous">
+                  <img src="./img/25.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/24.jpg" class="luminous">
+                  <img src="./img/24.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/23.jpg" class="luminous">
+                  <img src="./img/23.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/22.jpg" class="luminous">
+                  <img src="./img/22.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/21.jpg" class="luminous">
+                  <img src="./img/21.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/26.jpg" class="luminous">
+                  <img src="./img/26.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/12.jpg" class="luminous">
+                  <img src="./img/12.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/01.jpg" class="luminous">
+                  <img src="./img/01.jpg" alt="人物1">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <!-- <li class="item js-item">
+                <a href="./img/02.jpg" class="luminous">
+                  <img src="./img/02.jpg" alt="人物2">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li> -->
+
+              <!-- <li class="item js-item">
+                <a href="./img/03.jpg" class="luminous">
+                  <img src="./img/03.jpg" alt="人物3">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li> -->
+
+              <li class="item js-item">
+                <a href="./img/04.jpg" class="luminous">
+                  <img src="./img/04.jpg" alt="人物4">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/05.jpg" class="luminous">
+                  <img src="./img/05.jpg" alt="人物5">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/20.jpg" class="luminous">
+                  <img src="./img/20.jpg" alt="風景4">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/08.jpg" class="luminous">
+                  <img src="./img/08.jpg" alt="風景1">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/09.jpg" class="luminous">
+                  <img src="./img/09.jpg" alt="風景2">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/10.jpg" class="luminous">
+                  <img src="./img/10.jpg" alt="静物1">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/11.jpg" class="luminous">
+                  <img src="./img/11.jpg" alt="静物2">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/07.jpg" class="luminous">
+                  <img src="./img/07.jpg" alt="動物1">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/13.jpg" class="luminous">
+                  <img src="./img/13.jpg" alt="植物1">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/14.jpg" class="luminous">
+                  <img src="./img/14.jpg" alt="風景2">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/15.jpg" class="luminous">
+                  <img src="./img/15.jpg" alt="静物3">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/16.jpg" class="luminous">
+                  <img src="./img/16.jpg" alt="風景4">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/17.jpg" class="luminous">
+                  <img src="./img/17.jpg" alt="風景4">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/28.jpg" class="luminous">
+                  <img src="./img/28.jpg" alt="風景4">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/29.jpg" class="luminous">
+                  <img src="./img/29.jpg" alt="風景4">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+          <input id="TAB-02" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-02">人物・キャラクター</label>
+          <div class="tab-content">
+            <ul class="item-wrap js-grid">
+
+              <li class="item js-item">
+                <a href="./img/27.jpg" class="luminous">
+                  <img src="./img/27.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/25.jpg" class="luminous">
+                  <img src="./img/25.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/24.jpg" class="luminous">
+                  <img src="./img/24.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/23.jpg" class="luminous">
+                  <img src="./img/23.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/22.jpg" class="luminous">
+                  <img src="./img/22.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/21.jpg" class="luminous">
+                  <img src="./img/21.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/26.jpg" class="luminous">
+                  <img src="./img/26.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/12.jpg" class="luminous">
+                  <img src="./img/12.jpg" alt="人物6">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/01.jpg" class="luminous">
+                  <img src="./img/01.jpg" alt="人物1">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <!-- <li class="item js-item">
+                <a href="./img/02.jpg" class="luminous">
+                  <img src="./img/02.jpg" alt="人物2">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li> -->
+
+              <!-- <li class="item js-item">
+                <a href="./img/03.jpg" class="luminous">
+                  <img src="./img/03.jpg" alt="人物3">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li> -->
+
+              <li class="item js-item">
+                <a href="./img/04.jpg" class="luminous">
+                  <img src="./img/04.jpg" alt="人物4">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/05.jpg" class="luminous">
+                  <img src="./img/05.jpg" alt="人物5">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/28.jpg" class="luminous">
+                  <img src="./img/28.jpg" alt="人物">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <!-- <li class="item js-item">
+                <a href="./img/06.jpg" class="luminous">
+                  <img src="./img/06.jpg" alt="ミニキャラ1">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li> -->
+
+            </ul>
+          </div>
+
+          <input id="TAB-04" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-04">風景</label>
+          <div class="tab-content">
+            <ul class="item-wrap js-grid">
+
+              <li class="item js-item">
+                <a href="./img/20.jpg" class="luminous">
+                  <img src="./img/20.jpg" alt="風景4">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/08.jpg" class="luminous">
+                  <img src="./img/08.jpg" alt="風景1">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/09.jpg" class="luminous">
+                  <img src="./img/09.jpg" alt="風景2">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/14.jpg" class="luminous">
+                  <img src="./img/14.jpg" alt="風景2">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/16.jpg" class="luminous">
+                  <img src="./img/16.jpg" alt="風景4">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/17.jpg" class="luminous">
+                  <img src="./img/17.jpg" alt="風景4">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <input id="TAB-05" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-05">その他</label>
+          <div class="tab-content">
+            <ul class="item-wrap js-grid">
+              <li class="item js-item">
+                <a href="./img/10.jpg" class="luminous">
+                  <img src="./img/10.jpg" alt="静物1">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/11.jpg" class="luminous">
+                  <img src="./img/11.jpg" alt="静物2">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/07.jpg" class="luminous">
+                  <img src="./img/07.jpg" alt="動物1">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/15.jpg" class="luminous">
+                  <img src="./img/15.jpg" alt="静物3">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+              <li class="item js-item">
+                <a href="./img/29.jpg" class="luminous">
+                  <img src="./img/29.jpg" alt="カット">
+                  <p class="item-txt">
+                    <span class="item-data"></span><br>
+                    <span class="item-ttl"></span>
+                  </p>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+      </div>
+
+      </div>
+
+    </section><!-- /.contents -->
+
+  </main>
+ 
+  <footer class="footer">
+  <div class="footer__logo">
+
+  </div>
+  <nav class="footer__nav">
+    <ul class="footer__nav-inner">
+      <li class="footer__nav-item">
+        <a href="/">HOME</a>
+      </li>
+      <!-- <li class="footer__nav-item">
+        <a href="https://hiromia-portfolio.com/policy/" target="_blank" rel="noopener">プライバシーポリシー</a>
+      </li> -->
+    </ul>
+  </nav>
+  <div class="footer__copyright">
+    <small>© Hiromi's Portfolio</small>
+  </div>
+
+
+  <div class="page-top js-pagetop">
+    <a href="#">
+      <p class="page-top__inner">
+        <span class="page-top__item">
+          <object type="image/svg+xml" data="./img/page-top.svg" width="80" height="60" alt="Hiromi's Portfolio"></object>
+        </span>
+      </p>
+    </a>
+  </div>
+
+</footer>
+
+<script src="./js/jquery-3.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/masonry.pkgd.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/imagesloaded.pkgd.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/luminous.min.js"></script>
+<script src="./js/script.js" type="text/javascript" charset="utf-8"></script>
+</div><!-- /.wrap -->
+</body>
+
+</html>

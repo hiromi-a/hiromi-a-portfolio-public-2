@@ -1,0 +1,209 @@
+@charset "UTF-8";
+@use "./_reset";
+@use "./_common";
+@use "./_header";
+@use "./_footer";
+@use "./_contact";
+
+
+.profile {
+  margin-bottom: 48px;
+}
+
+.profile__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: min(80%, 600px);
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+
+.profile__img {
+  img {
+    width: 120px;
+  }
+}
+
+.profile__img + .profile__desc {
+
+}
+
+.profile__desc {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.profile__ttl {
+  line-height: 1.8;
+  font-weight: normal;
+}
+
+.profile__name {
+  font-size: 21px;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  span {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+  }
+}
+
+.profile__txt {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2;
+  margin-top: 0;
+}
+
+.profile__contact {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2;
+  margin-top: 4px;
+}
+
+.profile__sns {
+  margin-top: 20px;
+  svg {
+    background: #000;
+    color: #fff;
+    padding: 6px;
+    border-radius: 50%;
+  }
+}
+
+.sns__icon-item + .sns__icon-item {
+  margin-left: 8px;
+}
+
+
+.item-wrap {
+  margin: auto;
+}
+
+.item {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.item img {
+  width: 98%;
+}
+
+.page-top {
+  object {
+    pointer-events: none;
+  }
+}
+
+
+@media screen and (max-width:767px) {
+
+  .header__logo {
+    padding: 16px;
+    padding-bottom: 0;
+    object {
+      width: 240px;
+    }
+  }
+
+  .profile__img {
+    img {
+      width: 100px;
+    }
+  }
+
+  .profile__name {
+    font-size: 18px;
+  }
+
+  .profile__txt {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 0;
+}
+}
+
+@media screen and (min-width: 480px) {
+  .item {
+    width: 380px;
+  }
+}
+
+
+/* loading setting */
+#loading {
+  transition: all 3s; /*ローディングにかかる時間*/
+  background-color:#EEE ;
+  z-index: 999;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* spinner by spinkit 
+https://tobiasahlin.com/spinkit/
+*/
+
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  
+  -webkit-animation: sk-rotate 2.0s infinite linear;
+  animation: sk-rotate 2.0s infinite linear;
+}
+
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #333;
+  border-radius: 100%;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}

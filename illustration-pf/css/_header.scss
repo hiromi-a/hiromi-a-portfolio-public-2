@@ -1,0 +1,155 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo {
+  padding: 24px;
+}
+
+.header__nav {
+ 
+}
+
+.header__nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__nav-item {
+  
+}
+
+.header__nav-item + .header__nav-item {
+  margin-left: 16px;
+}
+
+.hamburger__wrap {
+  display: none;
+}
+
+@media screen and (max-width:767px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header__nav {
+    background: #ccc;
+  }
+
+  .header__nav-inner {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .header__nav-item + .header__nav-item {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .hamburger__bg {
+    
+  }
+  .hamburger__wrap {
+    display: block;
+    position: absolute;
+    right: 34px;
+    top: 47px;
+    transform: translate(0, -50%);
+    z-index: 4;
+  }
+  .hamburger {
+    display: block;
+    z-index: 4;
+    position: relative;
+    cursor: pointer;
+    width: 37px;
+    height: 45px;
+    background: transparent;
+    border: none;
+    .hamburger__item {
+      position: absolute;
+      display: inline-block;
+      transition: .4s;
+      right: 0;
+      height: 3px;
+      border-radius: 5px;
+      width: 100%;
+      background: #2E2E2E;
+      &:nth-of-type(1) {
+        top: 0;
+      }
+      &:nth-of-type(2) {
+        top: 11px;
+      }
+      &:nth-of-type(3) {
+        top: 22px;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: -2px;
+          font-size: 0.6rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+    &.active {
+      .hamburger__item {
+        &:nth-of-type(1) {
+          top: 14px;
+          left: 0;
+          transform: translateY(6px) rotate(-45deg);
+        }
+        &:nth-of-type(2) {
+          opacity: 0;
+        }
+        &:nth-of-type(3) {
+          top: 26px;
+          left: 0;
+          transform: translateY(-6px) rotate(45deg);
+          &::after {
+            content: '';
+            transform: translateY(0) rotate(-45deg);
+            top: 5px;
+            left: 4px;
+          }
+        }
+      }
+      .hamburger__wrap & {
+        top: -8px;
+        right: 0;
+      }
+    }
+  }
+  .js-header__nav {
+    .header__nav {
+      display: none;
+    }
+    &.nav_active {
+      position: fixed;
+      z-index: 2;
+      top: 57px;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      animation: NavAnime 0.5s forwards;
+      overflow: scroll;
+      .header__nav {
+        display: block;
+      }
+    }
+  }
+  @keyframes NavAnime {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}
